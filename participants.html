@@ -26,24 +26,26 @@
                 </div>
             </div>
             <ul class="flex space-x-6">
-                <li><a href="index.html" class="hover:text-[--Bleu-principal] transition-all duration-400">Tableau de Board</a>
+                <li><a href="index.html" class="hover:text-[--Bleu-principal] transition-all duration-400">Tableau de
+                        Board</a>
                 </li>
                 <li><a href="#" class="hover:text-[--Bleu-principal] transition-all duration-400">Defits</a></li>
-                <li><a href="participants.html" class="hover:text-[--Bleu-principal] transition-all duration-400">Participants</a></li>
+                <li><a href="participants.html"
+                        class="hover:text-[--Bleu-principal] transition-all duration-400">Participants</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="min-h-screen py-20 max-w-7xl mx-auto">
-            <header class="py-4 flex justify-between items-center mb-6">
+            <header class="py-4 flex flex-col gap-5 md:flex-row justify-between items-center mb-6">
                 <div class="content">
                     <span class="text-[15px] font-light text-[var(--Bleu-principal)]">Ligue & Communauté</span>
                     <h1 class="text-[60px] font-bold">Participants</h1>
                     <p class="text-[14px]">Gérez les membres de votre communauté sportive et synchronisez leurs défis
                         actifs.</p>
                 </div>
-                <button
+                <button id="btn_nouveau_participant"
                     class="bg-[--Bleu-principal] py-2 px-8 cursor-pointer text-white rounded-md hover:bg-transparent hover:text-[--Bleu-principal] transition-all duration-600 border-2 border-[--Bleu-principal]"><i
                         class="fa-solid fa-user"></i> Nouveau Participant</button>
             </header>
@@ -54,115 +56,74 @@
                     placeholder="Recherche un Participant par nom ou pseudo...">
             </div>
 
+            <div class="info-about-participants"></div>
 
-            <div class="container grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12">
-
-                <article class="cart shadow-md hover:shadow-2xl py-3 px-4 rounded-lg">
-                    <div class="top-cart flex items-center mb-4">
-                        <h3 class="bg-red-300 min-h-fit max-w-fit rounded-full p-2 font-bold">HN</h3>
-                        <div class="flex flex-col mx-3">
-                            <b>Haitam Nefal</b>
-                            <span>@haitam_nefal</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h4>Defis en Cours :</h4>
-                        <div>
-                            <span>Lorem, ipsum.</span>
-                            <span>Lorem,</span>
-                            <span>Lorem, ipsum.</span>
-                        </div>
-                    </div>
-                    <div class="footer-cart mt-4 flex space-x-5">
-                        <button id="modifier_participant" class="hover:text-green-500 transition-all duration-400"><i
-                                class="fa-solid fa-pencil"></i>Modifier</button>
-                        <button id="Supprimer_participant" class="hover:text-red-500 transition-all duration-400"><i
-                                class="fa-solid fa-trash"></i>Supprimer</button>
-                    </div>
-                </article>
-
-                <article class="cart shadow-md hover:shadow-2xl py-3 px-4 rounded-lg">
-                    <div class="top-cart flex items-center mb-4">
-                        <h3 class="bg-red-300 min-h-fit max-w-fit rounded-full p-2 font-bold">HN</h3>
-                        <div class="flex flex-col mx-3">
-                            <b>Haitam Nefal</b>
-                            <span>@haitam_nefal</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h4>Defis en Cours :</h4>
-                        <div>
-                            <span>Lorem, ipsum.</span>
-                            <span>Lorem,</span>
-                            <span>Lorem, ipsum.</span>
-                        </div>
-                    </div>
-                    <div class="footer-cart mt-4 flex space-x-5">
-                        <button id="modifier_participant" class="hover:text-green-500 transition-all duration-400"><i
-                                class="fa-solid fa-pencil"></i>Modifier</button>
-                        <button id="Supprimer_participant" class="hover:text-red-500 transition-all duration-400"><i
-                                class="fa-solid fa-trash"></i>Supprimer</button>
-                    </div>
-                </article>
-
-                <article class="cart shadow-md hover:shadow-2xl py-3 px-4 rounded-lg">
-                    <div class="top-cart flex items-center mb-4">
-                        <h3 class="bg-red-300 min-h-fit max-w-fit rounded-full p-2 font-bold">HN</h3>
-                        <div class="flex flex-col mx-3">
-                            <b>Haitam Nefal</b>
-                            <span>@haitam_nefal</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h4>Defis en Cours :</h4>
-                        <div>
-                            <span>Lorem, ipsum.</span>
-                            <span>Lorem,</span>
-                            <span>Lorem, ipsum.</span>
-                        </div>
-                    </div>
-                    <div class="footer-cart mt-4 flex space-x-5">
-                        <button id="modifier_participant" class="hover:text-green-500 transition-all duration-400"><i
-                                class="fa-solid fa-pencil"></i>Modifier</button>
-                        <button id="Supprimer_participant" class="hover:text-red-500 transition-all duration-400"><i
-                                class="fa-solid fa-trash"></i>Supprimer</button>
-                    </div>
-                </article>
-
-
-                <article class="cart shadow-md hover:shadow-2xl py-3 px-4 rounded-lg">
-                    <div class="top-cart flex items-center mb-4">
-                        <h3 class="bg-red-300 min-h-fit max-w-fit rounded-full p-2 font-bold">HN</h3>
-                        <div class="flex flex-col mx-3">
-                            <b>Haitam Nefal</b>
-                            <span>@haitam_nefal</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h4>Defis en Cours :</h4>
-                        <div>
-                            <span>Lorem, ipsum.</span>
-                            <span>Lorem,</span>
-                            <span>Lorem, ipsum.</span>
-                        </div>
-                    </div>
-                    <div class="footer-cart mt-4 flex space-x-5">
-                        <button id="modifier_participant" class="hover:text-green-500 transition-all duration-400"><i
-                                class="fa-solid fa-pencil"></i>Modifier</button>
-                        <button id="Supprimer_participant" class="hover:text-red-500 transition-all duration-400"><i
-                                class="fa-solid fa-trash"></i>Supprimer</button>
-                    </div>
-                </article>
-
-
-
+            <div id="container_participant" class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12">
+                <!--  -->
             </div>
 
+
+            <div id="popup_ajoute_participant"
+                class="hidden absolute left-[50%] top-[50%] bg-gray-700 translate-x-[-50%] translate-y-[-50%] py-3 px-5 rounded-md z-90 shadow-lg">
+                <header class="mb-6">
+                    <span class="text-light text-[--Bleu-principal] ">Gestion Des Members</span>
+                    <h3 class="text-[30px] font-bold">+ Nouveau Participant</h3>
+                    <p class="text-light">Ajoutez un membre et associez-le aux défis en cours</p>
+                </header>
+                <form class="space-y-3" name="add_participant">
+                    <div class="">
+                        <span class="text-[18px] font-semibold">Nom complet</span>
+                        <input type="text" name="fullname" placeholder="haitam nefal"
+                            class="w-full py-1 px-3 outline-none rounded-md">
+                        <span id="form_error" class="text-red-800 text-light mt-1 font-bold"></span>
+                    </div>
+                    <div>
+                        <span class="text-[18px] font-semibold">Pseudo</span>
+                        <input type="text" name="pseudo" placeholder="@haitam_123"
+                            class="w-full py-1 px-3 outline-none rounded-md">
+                        <span id="form_error" class="text-red-800 text-light mt-1 font-bold"></span>
+                    </div>
+                    <button id="btn_add_participant"
+                        class="bg-[--Bleu-principal] py-1 px-4 cursor-pointer border border-[--Bleu-principal] hover:bg-transparent hover:text-[--Bleu-principal] transition-all duration-600">Enregistrer
+                        le participant</button>
+                    <button class="bg-white py-1 px-3 cursor-pointer" id="anuller_create_participant">Annuler</button>
+                </form>
+            </div>
+
+            <div id="popup_modifier_participant"
+                class="hidden absolute left-[50%] top-[50%] bg-gray-700 translate-x-[-50%] translate-y-[-50%] py-3 px-5 rounded-md z-90 shadow-lg">
+                <header class="mb-6">
+                    <span class="text-light text-[--Bleu-principal] ">Gestion Des Members</span>
+                    <h3 class="text-[30px] font-bold">Modifier Participant</h3>
+                    <p class="text-light">Modifier un membre</p>
+                </header>
+                <form class="space-y-3" name="modifier_participant">
+                    <div class="">
+                        <span class="text-[18px] font-semibold">Nom complet</span>
+                        <input type="text" name="fullname" placeholder="haitam nefal"
+                            class="w-full py-1 px-3 outline-none rounded-md">
+                        <span id="form_error" class="text-red-800 text-light mt-1 font-bold"></span>
+                    </div>
+                    <div>
+                        <span class="text-[18px] font-semibold">Pseudo</span>
+                        <input type="text" name="pseudo" placeholder="@haitam_123"
+                            class="w-full py-1 px-3 outline-none rounded-md">
+                        <span id="form_error" class="text-red-800 text-light mt-1 font-bold"></span>
+                    </div>
+                    <button id="btn_modifier_participant"
+                        class="bg-[--Bleu-principal] py-1 px-4 cursor-pointer border border-[--Bleu-principal] hover:bg-transparent hover:text-[--Bleu-principal] transition-all duration-600">Modifier
+                        le participant</button>
+                    <button class="bg-white py-1 px-3 cursor-pointer" id="anuller_create_participant">Annuler</button>
+                </form>
+            </div>
 
         </section>
     </main>
 
 
+
+    <script src="js/participants.js" type="module"></script>
+    <script src="js/Data/participantsData.js" type="module"></script>
 </body>
 
 </html>
