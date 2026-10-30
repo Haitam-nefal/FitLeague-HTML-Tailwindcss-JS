@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defits</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body class="bg-gray-200 box-border">
+     <header class="bg-[--bg-backgroun] fixed w-full shadow-lg">
+        <nav class="flex justify-between items-center min-h-[80px] px-10">
+            <div class="logo flex items-center">
+                <img src="Assets/images/logo.png" alt="logo">
+                <div class="ml-3">
+                    <h4 class="font-bold">FitLeague</h4>
+                    <span class="font-light">DefiSportifs</span>
+                </div>
+            </div>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="hover:text-[--Bleu-principal] transition-all duration-400">Tableau de Board</a>
+                </li>
+                <li><a href="#" class="hover:text-[--Bleu-principal] transition-all duration-400">Defits</a></li>
+                <li><a href="#" class="hover:text-[--Bleu-principal] transition-all duration-400">Participants</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <main class="pt-20">
+
+        <div class="bar-de-defi flex justify-around items-center bg-white ">
+            <div>
+                <ul class="flex justify-around items-center gap-8">
+                    <li class="hover:bg-red-100">Tous les défis</li>
+                    <li class="hover:bg-red-100">Défis actifs</li>
+                    <li class="hover:bg-red-100">Défis terminés</li>
+                </ul>
+            </div>
+
+            <div class="search-countainer flex items-center">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Rechercher un défi ou un sport...">
+            </div>
+        </div>
+
+        <div class="content-layout flex gap-5">
+            <!-- -------------cards----------------------- -->
+            <div class="cards w-[70%] grid grid-cols-2">
+                <div class="exemple-card  rounded overflow-hidden shadow-lg m-8 ">
+                    <div class="flex">
+
+                        <div class="flex justify-items-center">
+                            <div class="flex">
+
+                                <i class="fa-solid fa-person-running"></i>
+                                <h3 class="nomDeSports text-black  font-bold ">COURSE À PIED </h3>
+                            </div>
+                            <div class="activite bg-green-200 border-5 rounded-full border-3 border-white-900 ">active</div>
+                        </div>
+                    </div>
+                        
+                    <h2 class="tiltle-de-defi text-[--Bleu-principal] text-2xl   ">Marathon relais de Printemps </h2>
+                    <p class="description">Cumuler 42,195 km par équipe de 4 coureurs avant la fin du mois.</p>
+                    <div class="date text-gray-700 font-bold flex justify-end flex-col ">
+                        <h5> date limite</h5>
+                        <p>12/12/12</p>
+                    </div>
+                    <p>8 Participants</p>
+                    <div class="flex justify-around">
+
+                        <div class="flex items-center text-green-700">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <div class="bouton">modifier</div>
+                        </div>
+                        <div class="flex items-center text-red-500">
+
+                            <i class="fa-regular fa-trash-can"></i>
+                            <div class="bouton">suprimer</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ---------------formulaire------------------ -->
+            <div class="formulaire w-[30%]  grid grid-row-1 items-center ">
+                <form action="text ">
+                    <div id="titreDeDefi">
+                        <label >Titre du defi</label>
+                        <input type="Ex: 100km Running de Mai">
+                    </div>
+                    <div id="sportAssocie ">
+                        <label >Sport associé</label>
+                        <input list="sportAssocie" type="Sélectionner un sport...">
+                        <datalist>
+                            <option value="Football" ><i class="fa-solid fa-futbol"></i></option>
+                            <option value="Basketball"><i class="fa-light fa-basketball"></i></option>
+                            <option value="Handball"></option>
+                            <option value="Volley-ball"><i class="fa-light fa-volleyball"></i></option>
+                            <option value="Tennis"></option>
+                            <option value="Tennis de table"><i class="fa-light fa-table-tennis-paddle-ball"></i></option>
+                            <option value="Judo"></option>
+                            <option value="Karaté"></option>
+                            <option value="Boxe"></option>
+                            <option value="Taekwondo"></option>
+                            <option value="Athlétisme"><i class="fa-regular fa-person-running"></i></option>
+                            <option value="Course à pied"><i class="fa-regular fa-person-walking"></i></option>
+                            <option value="Natation"><i class="fa-regular fa-person-swimming"></i></option>
+                            <option value="Cyclisme"><i class="fa-regular fa-person-biking"></i></option>
+                            <option value="Surf"></option>
+                        </datalist>
+                    </div>
+
+                    <div id="descriptionDuDefi">
+                        <label >Description du défi
+                            <input type="Décrivez les règles et l'esprit du défi...">
+                        </label>
+                    </div>
+                    <div id="ObjectifAtteindre">
+
+                        <label >Objectif à atteindre
+
+                            <input type="Ex: 100 km ou 5 000 m">
+                        </label>
+                    </div>
+                    <div id="dateLimite">
+                        <label >Date limite
+                            <input type="date">
+                        </label>
+                    </div>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+
+    </main>
+<script></script>
+</body>
+</html>
