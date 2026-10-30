@@ -17,7 +17,7 @@
 <body>
 
     <header class="bg-[--bg-backgroun] fixed w-full shadow-lg">
-        <nav class="flex justify-between items-center min-h-[80px] px-10">
+        <nav class="flex flex-col md:flex-row justify-between items-center min-h-[80px] px-10">
             <div class="logo flex items-center">
                 <img src="Assets/images/logo.png" alt="logo">
                 <div class="ml-3">
@@ -52,7 +52,7 @@
 
             <div class="bare-de-recherche bg-black flex items-center border border-black rounded-md py-1">
                 <i class="fa-solid fa-magnifying-glass text-white px-2 min-w-fit"></i>
-                <input type="text" class="block min-w-[97%] outline-none px-4 py-1"
+                <input type="text" id="input_recherech" class="block min-w-[97%] outline-none px-4 py-1"
                     placeholder="Recherche un Participant par nom ou pseudo...">
             </div>
 
@@ -120,10 +120,7 @@
         </section>
     </main>
 
-
-
     <script src="js/participants.js" type="module"></script>
-    <script src="js/Data/participantsData.js" type="module"></script>
 </body>
 
 </html>

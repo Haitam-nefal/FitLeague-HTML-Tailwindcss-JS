@@ -36,10 +36,10 @@
     <main>
 
         <section class="min-h-screen py-20 max-w-7xl mx-auto grid items-center">
-            <header class="py-4 flex justify-between items-center mb-6">
+            <header class="py-4 flex flex-col md:flex-row gap-10 justify-between items-center mb-6">
                 <div class="content">
                     <span class="text-[15px] font-light text-[var(--Bleu-principal)]">APERÇU GÉNÉRAL</span>
-                    <h1 class="text-[60px] font-bold">Tableau de bord</h1>
+                    <h1 class="text-[30px] md:text-[60px] font-bold">Tableau de bord</h1>
                     <p class="text-[14px]">Suivez vos défis sportifs et vos performances en direct.</p>
                 </div>
                 <button
@@ -62,7 +62,7 @@
                 <div class="box shadow-lg py-5 px-3 rounded-xl flex justify-between">
                     <div>
                         <h3 class="font-bold text-[--Vert-secondaire]">PARTICIPANTS INSCRITS</h3>
-                        <span class="text-[40px] font-bold">28</span>
+                        <span class="text-[40px] font-bold" id="nombre_participant">28</span>
                     </div>
                     <div class="bg-[--Vert-secondaire] p-4 rounded-md max-h-fit">
                         <i class="fa-solid fa-people-group"></i>
@@ -150,6 +150,7 @@
 
     </main>
 
+    <script src="js/index.js" type="module"></script>
 </body>
 
 </html>

@@ -68,7 +68,7 @@ const AjouterParticipant = (e) => {
 btn_add_participant.addEventListener("click", AjouterParticipant);
 
 // FUNCTION => POUR AFFICHAGE DE LES PARTICIPANTS :
-function AffichageParticipants() {
+function AffichageParticipants(filterInput = "") {
   if (
     JSON.parse(localStorage.getItem("participants"))?.length === 0 ||
     participants.length === 0
@@ -82,7 +82,14 @@ function AffichageParticipants() {
   document.querySelector(".info-about-participants").innerHTML = ``;
   document.getElementById("container_participant").innerHTML = ``;
 
-  participants.forEach((p) => {
+  const ps =
+    filterInput === ""
+      ? participants
+      : participants.filter((ele) =>
+          ele.fullName.toLowerCase().includes(filterInput.toLowerCase()),
+        );
+
+  ps.forEach((p) => {
     document.getElementById("container_participant").innerHTML += `
     <article class="cart shadow-md hover:shadow-2xl py-3 px-4 rounded-lg">
         ${topCart(p)}
@@ -205,5 +212,10 @@ document
       ModifierParticipant(e.target.dataset.id);
     }
   });
+
+// FILTRAGE DE PARTICIPANTS AVEC SON NOM :
+document.getElementById("input_recherech").addEventListener("input", (e) => {
+  AffichageParticipants(e.target.value);
+});
 
 AffichageParticipants();
